@@ -5,7 +5,7 @@ st.set_page_config(page_title="AI News Dashboard", layout="wide")
 
 st.title("🤖 AI News Dashboard")
 
-API_KEY = "be6993db868843b08ef47b738b99fdb1"
+API_KEY = st.secrets["NEWS_API_KEY"]
 
 company = st.sidebar.selectbox(
     "Select Topic",
